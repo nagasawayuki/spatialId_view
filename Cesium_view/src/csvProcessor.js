@@ -91,8 +91,8 @@ function setupFileInput(viewer, fileInput) {
             }
           }
           console.log("生成された8頂点のbinaryID:", vertexBinaryIDs);
-          console.log("decodedVertex:", decodeArr);
-          console.log("vertexInfo: ", check);
+          console.log("生成された8頂点の空間ID:", decodeArr);
+          console.log("生成された8頂点の元データ: ", check);
           console.log("coord", vertexCoordinates);
           const faceColor = Cesium.Color.fromCssColorString("#FF6666").withAlpha(0.5);
           viewer.entities.add({

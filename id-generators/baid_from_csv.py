@@ -7,7 +7,14 @@ from calculate_spatial_id import (
 )
 
 # 入力CSVファイルのパス（適宜変更してください）
-csv_file = './cesium_view/test_data/test7.csv'
+'''
+csv形式
+ズームレベル, 標高, 経度, 緯度, 時刻
+
+例)
+20	1000 139.93745032552573	37.524004043618646	2025-02-26T00:00:00Z
+'''
+csv_file = './your_csv_file'
 
 # 入力ファイル名を抽出し、出力CSVファイル名を作成
 input_filename = os.path.basename(csv_file)
