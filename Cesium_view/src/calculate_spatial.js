@@ -106,7 +106,8 @@ function calculatePositionSpatialId(z, h, lng, lat) {
   function inverseOriginalInfo(fHeader, xHeader, yHeader, f, x, y, i, t) {
     const [h_est, lng_est, lat_est] = inversePositionSpatialId(fHeader, xHeader, yHeader, f, x, y);
     const timeStr = inverseTimeSpatialId(i, t);
-    return { height: h_est, longitude: lng_est, latitude: lat_est, time: timeStr };
+    const time_end = inverseTimeSpatialId(i,t+1);
+    return { height: h_est, longitude: lng_est, latitude: lat_est, time: timeStr, time_end:time_end };
   }
   
   export {

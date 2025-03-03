@@ -102,7 +102,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           viewer.entities.add({
             id: `face_top_${i}`,
@@ -111,7 +117,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           viewer.entities.add({
             id: `face_north_${i}`,
@@ -120,7 +132,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           viewer.entities.add({
             id: `face_south_${i}`,
@@ -129,7 +147,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           viewer.entities.add({
             id: `face_west_${i}`,
@@ -138,7 +162,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           viewer.entities.add({
             id: `face_east_${i}`,
@@ -147,7 +177,13 @@ function setupFileInput(viewer, fileInput) {
               material: faceColor,
               perPositionHeight: true
             },
-            originalBinaryID
+            originalBinaryID,
+            availability: new Cesium.TimeIntervalCollection([
+              new Cesium.TimeInterval({
+                start: Cesium.JulianDate.fromIso8601(check[0].time),
+                stop: Cesium.JulianDate.fromIso8601(check[0].time_end)
+              })
+            ])
           });
           let camera_height = check[4].height + 10;
           const camera_position = Cesium.Cartesian3.fromDegrees(check[0].longitude, check[0].latitude, camera_height);
