@@ -1,0 +1,11 @@
+# 一般的な無視設定
+node_modules/
+.env
+.DS_Store
+
+# ビルド関連
+dist/
+build/
+*.log
+
+Cesium_view/src/config.js
