@@ -4,7 +4,7 @@
 
 ## ファイル構成
 
-    project-root/
+    Cesiumview/
     ├── index.html                // エントリーポイント（HTML）
     └── src/
         ├── config.js             // Cesium のアクセストークン設定
