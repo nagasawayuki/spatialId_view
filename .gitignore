@@ -8,4 +8,15 @@ dist/
 build/
 *.log
 
+#仮想環境
+venv
+
+.gitignore
+
+__pycache__
+
+
 Cesium_view/src/config.js
+
+data1
+data1_experiment_images
