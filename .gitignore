@@ -10,13 +10,53 @@ build/
 
 #仮想環境
 venv
-
 .gitignore
-
-__pycache__
-
-
 Cesium_view/src/config.js
 
 data1
 data1_experiment_images
+
+# Python バイトコードやキャッシュ
+__pycache__/
+*.py[cod]
+*.so
+
+# 仮想環境
+venv/
+env/
+.venv/
+
+# setuptools, pip 関連
+*.egg-info/
+*.eggs/
+dist/
+build/
+*.manifest
+*.spec
+
+# Jupyter Notebook チェックポイント（もし使う場合）
+.ipynb_checkpoints/
+
+# VSCode 設定（個人環境）
+.vscode/
+
+# テストログやカバレッジ
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+.cache
+
+# mypy / pylance
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# pyproject ビルドキャッシュ
+*.log
+pip-wheel-metadata/
+
+# OSによる不要ファイル
+.DS_Store
+Thumbs.db
